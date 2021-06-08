@@ -1,0 +1,69 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Computación",
+      "icono": "bi-laptop"
+    },
+    {
+      "id": 2,
+      "nombre": "Videojuegos",
+      "icono": "bi-joystick"
+    },
+    {
+      "id": 3,
+      "nombre": "Vestuario",
+      "icono": "bi-joystick"
+    },
+    {
+      "nombre": "Videojuegossss",
+      "icono": "asdasdsad",
+      "id": 4
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "juan",
+      "correo": "juan@gmail.com",
+      "password": "1234"
+    },
+    {
+      "nombre": "Juan Franciscoi",
+      "correo": "juanfrancisco@gmail.com",
+      "password": "1234",
+      "edad": 32,
+      "id": 2
+    }
+  ],
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Silla Of Gamer Kevin",
+      "marca": "Kevin",
+      "precio": 249990,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/881999543_1?wid=1500&hei=1500&qlt=70"
+    },
+    {
+      "id": 2,
+      "nombre": "Silla Gamer Cougar Armor One Black Pro Gaming",
+      "marca": "Cougar",
+      "precio": 249990,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/15119092_1?wid=1500&hei=1500&qlt=70"
+    },
+    {
+      "nombre": "Air Force 1 07 High Zapatilla Urbana Hombre",
+      "marca": "Nike",
+      "precio": 99990,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/15117218_1?wid=1500&hei=1500&qlt=70",
+      "id": 4
+    },
+    {
+      "nombre": "Apple AirPods Con Estuche De Carga (2 generación)",
+      "marca": "Apple",
+      "precio": 149990,
+      "imagen": "https://falabella.scene7.com/is/image/Falabella/7183779_1?wid=1500&hei=1500&qlt=70",
+      "id": 5
+    }
+  ]
+}
