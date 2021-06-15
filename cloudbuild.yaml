@@ -1,0 +1,25 @@
+steps:
+  - id: 'Build docker image angular'
+    name: 'gcr.io/cloud-builders/docker'
+    args: ["build", 
+    "-t", 
+    "gcr.io/$PROJECT_ID/mock-api:latest", "."]
+
+  - id: 'Push docker image angular'
+    name: 'gcr.io/cloud-builders/docker'
+    args: ["push",  "gcr.io/$PROJECT_ID/mock-api:latest"]
+
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - 'run'
+    - 'deploy'
+    - 'api-rest-mock-run'
+    - '--image'
+    - 'gcr.io/$PROJECT_ID/mock-api:$BUILD_ID'
+    - '--region'
+    - 'us-east1'
+    - '--platform'
+    - 'managed'
+    - '--allow-unauthenticated'
+    - '--port'
+    - '3000'

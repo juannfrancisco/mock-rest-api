@@ -34,6 +34,14 @@
       "password": "1234",
       "edad": 32,
       "id": 2
+    },
+    {
+      "nombre": "test",
+      "correo": "test@gmail.com",
+      "password": "1234",
+      "edad": 22,
+      "createdAt": 1623159537568,
+      "id": 3
     }
   ],
   "productos": [
