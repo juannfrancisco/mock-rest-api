@@ -21,6 +21,29 @@ server.post('/login', (req, res) => {
     if( correo == usuario.correo && password == usuario.password ){
       findUser = true;
       const token = jwt.sign(usuario, keyJWT , {
+        expiresIn: "1220ms"
+      });
+      res.jsonp({token:token})
+    }
+  });
+
+  if(!findUser){
+    res.sendStatus(401);
+  }
+  
+})
+
+
+server.post('/loginAdmin', (req, res) => {
+  let correo = req.body.correo;
+  let password = req.body.password;  
+  let usuarios = router.db.get("admins").value();
+  let findUser = false;
+
+  usuarios.forEach( usuario =>{
+    if( correo == usuario.correo && password == usuario.password ){
+      findUser = true;
+      const token = jwt.sign(usuario, keyJWT , {
         expiresIn: 1440
       });
       res.jsonp({token:token})

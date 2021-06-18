@@ -26,14 +26,16 @@
       "id": 1,
       "nombre": "juan",
       "correo": "juan@gmail.com",
-      "password": "1234"
+      "password": "1234",
+      "admin":true
     },
     {
       "nombre": "Juan Franciscoi",
       "correo": "juanfrancisco@gmail.com",
       "password": "1234",
       "edad": 32,
-      "id": 2
+      "id": 2,
+      "admin":false
     },
     {
       "nombre": "test",
@@ -41,7 +43,8 @@
       "password": "1234",
       "edad": 22,
       "createdAt": 1623159537568,
-      "id": 3
+      "id": 3,
+      "admin":false
     }
   ],
   "productos": [
