@@ -3,15 +3,16 @@ steps:
     name: node
     entrypoint: npm
     args: ['install']
+
   - id: 'Build docker image angular'
     name: 'gcr.io/cloud-builders/docker'
     args: ["build", 
     "-t", 
-    "gcr.io/$PROJECT_ID/mock-api:latest", "."]
+    "gcr.io/$PROJECT_ID/mock-api:$BUILD_ID", "."]
 
   - id: 'Push docker image angular'
     name: 'gcr.io/cloud-builders/docker'
-    args: ["push",  "gcr.io/$PROJECT_ID/mock-api:latest"]
+    args: ["push",  "gcr.io/$PROJECT_ID/mock-api:$BUILD_ID"]
 
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
